@@ -1,282 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>МЗППФ — Международная защита прав и поддержка участников</title>
+<title>МЗППФ | Международная защита прав и поддержка участников</title>
 
-<style>
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background: #080808;
-    color: #ffffff;
-}
-
-/* HEADER */
-
-header {
-    width: 100%;
-    padding: 20px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(0,0,0,0.8);
-    border-bottom: 1px solid #222;
-    position: sticky;
-    top: 0;
-    backdrop-filter: blur(10px);
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #d4af37;
-}
-
-nav a {
-    color: #ddd;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 15px;
-}
-
-nav a:hover {
-    color: #d4af37;
-}
-
-
-/* HERO */
-
-.hero {
-
-    min-height: 90vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
-    padding: 20px;
-
-}
-
-
-.hero-box {
-
-    max-width: 850px;
-
-    background:
-    linear-gradient(
-    145deg,
-    rgba(255,255,255,0.05),
-    rgba(255,255,255,0.01)
-    );
-
-    border: 1px solid #333;
-
-    border-radius: 20px;
-
-    padding: 50px;
-
-    box-shadow: 0 0 40px rgba(0,0,0,0.7);
-
-}
-
-
-.hero h1 {
-
-    font-size: 48px;
-    margin-bottom: 20px;
-
-}
-
-
-.hero span {
-
-    color:#d4af37;
-
-}
-
-
-.hero p {
-
-    font-size:20px;
-    color:#bbb;
-    line-height:1.5;
-
-}
-
-
-.buttons {
-
-    margin-top:40px;
-
-}
-
-
-button {
-
-    padding:15px 30px;
-
-    margin:10px;
-
-    border-radius:10px;
-
-    border:none;
-
-    cursor:pointer;
-
-    font-size:16px;
-
-}
-
-
-.main-btn {
-
-    background:#d4af37;
-
-    color:#000;
-
-}
-
-
-.second-btn {
-
-    background:#222;
-
-    color:white;
-
-    border:1px solid #555;
-
-}
-
-
-
-/* BLOCKS */
-
-section {
-
-    padding:70px 8%;
-
-}
-
-
-.title {
-
-    text-align:center;
-
-    font-size:32px;
-
-    margin-bottom:40px;
-
-}
-
-
-
-.cards {
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-
-    gap:20px;
-
-}
-
-
-
-.card {
-
-    background:#111;
-
-    border:1px solid #292929;
-
-    padding:30px;
-
-    border-radius:15px;
-
-}
-
-
-.card h3 {
-
-    color:#d4af37;
-
-    margin-bottom:15px;
-
-}
-
-
-.card p {
-
-    color:#aaa;
-
-    line-height:1.5;
-
-}
-
-
-
-/* FOOTER */
-
-
-footer {
-
-    text-align:center;
-
-    padding:30px;
-
-    color:#777;
-
-    border-top:1px solid #222;
-
-}
-
-
-/* MOBILE */
-
-@media(max-width:700px){
-
-header {
-
-flex-direction:column;
-
-}
-
-nav {
-
-margin-top:15px;
-
-}
-
-
-.hero h1 {
-
-font-size:34px;
-
-}
-
-
-.hero-box {
-
-padding:30px;
-
-}
-
-}
-
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -293,17 +25,12 @@ padding:30px;
 
 <nav>
 
-<a href="#">Главная</a>
-
-<a href="#">Устав</a>
-
-<a href="#">Права</a>
-
-<a href="#">Обращения</a>
-
-<a href="#">Архив</a>
-
-<a href="#">Сотрудники</a>
+<a href="index.html">Главная</a>
+<a href="pages/ustav.html">Устав</a>
+<a href="pages/rights.html">Права</a>
+<a href="pages/appeals.html">Обращения</a>
+<a href="pages/archive.html">Архив</a>
+<a href="pages/staff.html">Сотрудники</a>
 
 </nav>
 
@@ -311,22 +38,26 @@ padding:30px;
 
 
 
+<main>
 
-<div class="hero">
+
+<section class="hero">
 
 
-<div class="hero-box">
+<div class="hero-card">
 
 
 <h1>
-Международная <span>защита</span><br>
+Международная
+<span>защита</span>
+<br>
 прав и поддержка участников
 </h1>
 
 
 <p>
 Система рассмотрения обращений,
-защиты участников и формирования
+защиты участников и создания
 прозрачных решений.
 </p>
 
@@ -334,31 +65,30 @@ padding:30px;
 
 <div class="buttons">
 
-<button class="main-btn">
+<a href="pages/appeals.html" class="btn main">
 📝 Подать обращение
-</button>
+</a>
 
 
-<button class="second-btn">
-📜 Устав организации
-</button>
-
-
-</div>
+<a href="pages/ustav.html" class="btn">
+📜 Устав
+</a>
 
 
 </div>
 
 
 </div>
+
+
+</section>
 
 
 
 
 <section>
 
-
-<h2 class="title">
+<h2>
 Как работает МЗППФ
 </h2>
 
@@ -373,8 +103,8 @@ padding:30px;
 </h3>
 
 <p>
-Участник предоставляет информацию
-о ситуации и необходимые материалы.
+Участник сообщает о ситуации
+и предоставляет необходимую информацию.
 </p>
 
 </div>
@@ -388,8 +118,8 @@ padding:30px;
 </h3>
 
 <p>
-Ответственные сотрудники изучают
-обстоятельства и проводят анализ.
+Сотрудники изучают обстоятельства
+и проводят анализ.
 </p>
 
 </div>
@@ -403,18 +133,18 @@ padding:30px;
 </h3>
 
 <p>
-После рассмотрения формируется итоговое
-решение и при необходимости архивируется.
+Итог фиксируется и при необходимости
+добавляется в архив решений.
 </p>
 
 </div>
-
 
 
 </div>
 
 
 </section>
+
 
 
 
@@ -423,10 +153,63 @@ padding:30px;
 <section>
 
 
-<h2 class="title">
-Направления работы
+<h2>
+Основные разделы
 </h2>
 
+
+<div class="cards">
+
+
+<a class="card link" href="pages/rights.html">
+
+<h3>⚖ Права участников</h3>
+
+<p>
+Основные права и гарантии.
+</p>
+
+</a>
+
+
+
+<a class="card link" href="pages/archive.html">
+
+<h3>📂 Архив решений</h3>
+
+<p>
+История рассмотренных дел.
+</p>
+
+</a>
+
+
+
+<a class="card link" href="pages/staff.html">
+
+<h3>👥 Сотрудники</h3>
+
+<p>
+Структура организации.
+</p>
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<section class="stats">
+
+
+<h2>
+Статистика
+</h2>
 
 
 <div class="cards">
@@ -435,37 +218,39 @@ padding:30px;
 <div class="card">
 
 <h3>
-⚖ Права участников
+0
 </h3>
 
 <p>
-Основные права, обязанности и гарантии участников.
+Рассмотрено дел
 </p>
 
 </div>
 
 
+
 <div class="card">
 
 <h3>
-📂 Архив решений
+0
 </h3>
 
 <p>
-База завершённых дел и накопленного опыта.
+Сотрудников
 </p>
 
 </div>
 
 
+
 <div class="card">
 
 <h3>
-👥 Сотрудники
+2026
 </h3>
 
 <p>
-Структура организации и ответственные лица.
+Год основания
 </p>
 
 </div>
@@ -478,17 +263,24 @@ padding:30px;
 
 
 
+</main>
+
 
 
 <footer>
 
-© 2026 МЗППФ  
+МЗППФ © 2026
+
 <br>
+
 Международная защита прав и поддержка участников
 
 </footer>
 
 
 
+<script src="script.js"></script>
+
 </body>
+
 </html>

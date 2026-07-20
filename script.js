@@ -44,7 +44,9 @@ function setupLinks(){
 
 
     const links =
-    document.querySelectorAll("a");
+    document.querySelectorAll(
+        "nav a, .btn, .link"
+    );
 
 
     links.forEach(link=>{
@@ -57,7 +59,7 @@ function setupLinks(){
 
                 console.log(
                     "Переход:",
-                    link.innerText
+                    link.innerText.trim()
                 );
 
 
@@ -104,7 +106,7 @@ function setupAnimations(){
 
 
                     card.style.transition=
-                    "0.6s";
+                    "opacity 0.6s ease, transform 0.6s ease";
 
 
                     card.style.opacity="1";

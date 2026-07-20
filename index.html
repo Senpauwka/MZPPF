@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>МЗППФ — Международная защита прав и поддержка участников</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #080808;
+    color: #ffffff;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+    border-bottom: 1px solid #222;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+
+/* HERO */
+
+.hero {
+
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+
+.hero-box {
+
+    max-width: 850px;
+
+    background:
+    linear-gradient(
+    145deg,
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.01)
+    );
+
+    border: 1px solid #333;
+
+    border-radius: 20px;
+
+    padding: 50px;
+
+    box-shadow: 0 0 40px rgba(0,0,0,0.7);
+
+}
+
+
+.hero h1 {
+
+    font-size: 48px;
+    margin-bottom: 20px;
+
+}
+
+
+.hero span {
+
+    color:#d4af37;
+
+}
+
+
+.hero p {
+
+    font-size:20px;
+    color:#bbb;
+    line-height:1.5;
+
+}
+
+
+.buttons {
+
+    margin-top:40px;
+
+}
+
+
+button {
+
+    padding:15px 30px;
+
+    margin:10px;
+
+    border-radius:10px;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+
+.main-btn {
+
+    background:#d4af37;
+
+    color:#000;
+
+}
+
+
+.second-btn {
+
+    background:#222;
+
+    color:white;
+
+    border:1px solid #555;
+
+}
+
+
+
+/* BLOCKS */
+
+section {
+
+    padding:70px 8%;
+
+}
+
+
+.title {
+
+    text-align:center;
+
+    font-size:32px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.cards {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.card {
+
+    background:#111;
+
+    border:1px solid #292929;
+
+    padding:30px;
+
+    border-radius:15px;
+
+}
+
+
+.card h3 {
+
+    color:#d4af37;
+
+    margin-bottom:15px;
+
+}
+
+
+.card p {
+
+    color:#aaa;
+
+    line-height:1.5;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer {
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#777;
+
+    border-top:1px solid #222;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+header {
+
+flex-direction:column;
+
+}
+
+nav {
+
+margin-top:15px;
+
+}
+
+
+.hero h1 {
+
+font-size:34px;
+
+}
+
+
+.hero-box {
+
+padding:30px;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+МЗППФ
+</div>
+
+
+<nav>
+
+<a href="#">Главная</a>
+
+<a href="#">Устав</a>
+
+<a href="#">Права</a>
+
+<a href="#">Обращения</a>
+
+<a href="#">Архив</a>
+
+<a href="#">Сотрудники</a>
+
+</nav>
+
+</header>
+
+
+
+
+<div class="hero">
+
+
+<div class="hero-box">
+
+
+<h1>
+Международная <span>защита</span><br>
+прав и поддержка участников
+</h1>
+
+
+<p>
+Система рассмотрения обращений,
+защиты участников и формирования
+прозрачных решений.
+</p>
+
+
+
+<div class="buttons">
+
+<button class="main-btn">
+📝 Подать обращение
+</button>
+
+
+<button class="second-btn">
+📜 Устав организации
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<section>
+
+
+<h2 class="title">
+Как работает МЗППФ
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+01. Обращение
+</h3>
+
+<p>
+Участник предоставляет информацию
+о ситуации и необходимые материалы.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+02. Рассмотрение
+</h3>
+
+<p>
+Ответственные сотрудники изучают
+обстоятельства и проводят анализ.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+03. Решение
+</h3>
+
+<p>
+После рассмотрения формируется итоговое
+решение и при необходимости архивируется.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+<h2 class="title">
+Направления работы
+</h2>
+
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+⚖ Права участников
+</h3>
+
+<p>
+Основные права, обязанности и гарантии участников.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+📂 Архив решений
+</h3>
+
+<p>
+База завершённых дел и накопленного опыта.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+👥 Сотрудники
+</h3>
+
+<p>
+Структура организации и ответственные лица.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+© 2026 МЗППФ  
+<br>
+Международная защита прав и поддержка участников
+
+</footer>
+
+
+
+</body>
+</html>

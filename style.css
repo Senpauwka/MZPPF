@@ -4,25 +4,54 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
 }
+
+
+/* Защита от выхода элементов за экран */
+
+html {
+
+    overflow-x:hidden;
+
+}
+
+
+p,
+h1,
+h2,
+h3,
+a {
+
+    overflow-wrap:break-word;
+
+}
+
 
 
 body {
 
     background:
+
     radial-gradient(circle at top, #18202b 0%, #080808 45%);
 
-    color: white;
+    color:white;
 
     font-family:
+
     "Segoe UI",
     Arial,
     sans-serif;
 
     min-height:100vh;
+
+    overflow-x:hidden;
 
 }
 
@@ -46,6 +75,7 @@ header {
     padding:20px 8%;
 
     background:
+
     rgba(5,5,5,0.85);
 
     border-bottom:1px solid #252525;
@@ -131,6 +161,8 @@ nav a:hover {
 
 .hero-card {
 
+    width:100%;
+
     max-width:900px;
 
     text-align:center;
@@ -160,6 +192,8 @@ nav a:hover {
     0 20px 60px rgba(0,0,0,.6);
 
 
+    overflow:hidden;
+
 }
 
 
@@ -186,7 +220,7 @@ nav a:hover {
 
 .hero p {
 
-    color:#aaa;
+    color:#bdbdbd;
 
     font-size:20px;
 
@@ -334,6 +368,8 @@ section h2 {
     transition:.3s;
 
 
+    overflow:hidden;
+
 }
 
 
@@ -370,9 +406,11 @@ section h2 {
 
 .card p {
 
-    color:#aaa;
+    color:#bdbdbd;
 
     line-height:1.6;
+
+    font-size:16px;
 
 }
 
@@ -383,6 +421,8 @@ section h2 {
     text-decoration:none;
 
     color:white;
+
+    display:block;
 
 }
 
@@ -425,9 +465,11 @@ footer {
     1px solid #222;
 
 
-    color:#777;
+    color:#999;
 
-    line-height:1.6;
+    line-height:1.8;
+
+    font-size:15px;
 
 }
 
@@ -461,9 +503,19 @@ nav {
 
 
 
+.hero {
+
+    min-height:auto;
+
+    padding:20px;
+
+}
+
+
+
 .hero h1 {
 
-    font-size:36px;
+    font-size:34px;
 
 }
 
@@ -501,9 +553,25 @@ nav {
 
 
 
+section {
+
+    padding:50px 5%;
+
+}
+
+
+
 section h2 {
 
-    font-size:30px;
+    font-size:28px;
+
+}
+
+
+
+.card {
+
+    padding:25px;
 
 }
 
